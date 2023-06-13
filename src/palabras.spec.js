@@ -11,4 +11,9 @@ describe("Conteo de palabras", () => {
         expect(palabras.darConteoDe("El")).toEqual(["el",1]);
     });
 
+    it("de una oracion 'El esta el' deberia devolver '[[el,2],[esta,1]]' ", () => {
+        const palabras = new Palabras()
+        expect(palabras.conteoPalabras("El esta el")).toEqual([["el",2],["esta",1]]);
+    });
+
 });
