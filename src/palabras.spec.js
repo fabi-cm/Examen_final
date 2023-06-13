@@ -6,4 +6,9 @@ describe("Conteo de palabras", () => {
         expect(palabras.darConteoDe("el")).toEqual(["el",1]);
     });
 
+    it("de una palabra mayuscula o minuscula 'El' deberia devolver 'el,1' ", () => {
+        const palabras = new Palabras()
+        expect(palabras.darConteoDe("El")).toEqual(["el",1]);
+    });
+
 });

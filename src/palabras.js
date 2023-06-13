@@ -3,9 +3,11 @@ export default class Palabras{
         this.ConteoPalabras = []
     }
     darConteoDe(oracion){
-        const palabra = oracion.split(" ")
-        palabra.push(1)
-        return palabra
+        const palabras = oracion.split(" ")
+        const palabraMasConteo = []
+        palabraMasConteo.push(palabras[0].toLowerCase())
+        palabraMasConteo.push(1)
+        return palabraMasConteo
     }
 };
   
